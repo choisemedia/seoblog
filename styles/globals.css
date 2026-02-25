@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 249 250 252;
+  --fg: 12 18 31;
+  --muted: 78 87 104;
+  --card: 255 255 255;
+}
+
+.dark {
+  --bg: 9 12 22;
+  --fg: 242 245 255;
+  --muted: 170 180 200;
+  --card: 18 24 37;
+}
+
+html,
+body {
+  background: rgb(var(--bg));
+  color: rgb(var(--fg));
+  transition: background-color 500ms ease, color 500ms ease;
+}
+
+* {
+  scroll-behavior: smooth;
+}
